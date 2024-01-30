@@ -119,6 +119,7 @@ jobs:
         git init
         git branch -M ${{ env.DCN }}
         find . -size +100M -type f -exec git lfs track {} \;
+        git add .gitattributes
         git add .
         git commit -s -m "${{ env.DCN }}: proprietary: initial vendor tree"
         gh repo create ${{ env.TR }} --public --description="Vendor tree for ${{ env.DCN }}." --source=. --remote=origin --push
