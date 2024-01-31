@@ -103,15 +103,6 @@ jobs:
         bash extract-files.sh ${GITHUB_WORKSPACE}/workspace/firmware-dump/proprietary
         echo "Done extracting and making files."
         echo "Pushing as repository now."
-
-    - name: Check for large files and install Git LFS
-      run: |
-        cd workspace/android/vendor/${{ env.DVN }}/${{ env.DCN }}
-        large_files=$(find . -type f -size +100M -print)
-        if [ -n "$large_files" ]; then
-        sudo apt install git-lfs -y
-        git lfs install
-        fi
         
     - name: Push to Github as Repository
       run: |
