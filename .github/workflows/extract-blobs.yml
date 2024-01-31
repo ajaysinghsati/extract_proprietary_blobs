@@ -6,11 +6,11 @@ on:
       FIRMWARE_DUMP_REPO:
         description: 'Firmware Dump Repository URL'
         required: true
-        default: 'https://github.com/DerpFest-Devices/proprietary_vendor_realme_spartan.git'
+        default: 'https://www.opencode.net/romdumprx/oneplus/CPH2381.git'
       FIRMWARE_DUMP_BRANCH:
         description: 'Firmware Dump Repository Branch'
         required: true
-        default: '14'
+        default: 'qssi-user-13-TP1A.220905.001-1671645209415-release-keys-3144'
       DEVICE_TREE_REPO:
         description: 'Device Tree Repository URL'
         required: true
