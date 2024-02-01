@@ -14,7 +14,7 @@ on:
       DEVICE_TREE_REPO:
         description: 'Device Tree Repository URL'
         required: true
-        default: 'https://github.com/phhgsi/oplus_cam.git'
+        default: 'https://github.com/ajaysinghsati/oplus.git'
       DEVICE_TREE_BRANCH:
         description: 'Device Tree Repository Branch'
         required: true
