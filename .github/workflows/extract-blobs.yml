@@ -6,11 +6,11 @@ on:
       FIRMWARE_DUMP_REPO:
         description: 'Firmware Dump Repository URL'
         required: true
-        default: 'https://www.opencode.net/romdumprx/oneplus/CPH2381.git'
+        default: 'https://github.com/DerpFest-Devices/proprietary_vendor_realme_spartan.git'
       FIRMWARE_DUMP_BRANCH:
         description: 'Firmware Dump Repository Branch'
         required: true
-        default: 'qssi-user-13-TP1A.220905.001-1671645209415-release-keys-3144'
+        default: '14'
       DEVICE_TREE_REPO:
         description: 'Device Tree Repository URL'
         required: true
@@ -81,7 +81,6 @@ jobs:
       run: |
         mkdir workspace && cd workspace
         git clone --depth=1 ${{ env.FDR }} -b ${{ env.FDB }} ./firmware-dump
-        git clone --depth=1 https://github.com/DerpFest-Devices/proprietary_vendor_realme_spartan -b 14 ./firmware-dumper
 
     - name: Clone Device Tree
       run: |
