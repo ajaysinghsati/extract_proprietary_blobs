@@ -6,11 +6,11 @@ on:
       FIRMWARE_DUMP_REPO:
         description: 'Firmware Dump Repository URL'
         required: true
-        default: 'https://github.com/DerpFest-Devices/proprietary_vendor_realme_spartan.git'
+        default: 'https://github.com/ajaysinghsati/android_vendor_oplus_x.git'
       FIRMWARE_DUMP_BRANCH:
         description: 'Firmware Dump Repository Branch'
         required: true
-        default: '14'
+        default: 'lib'
       DEVICE_TREE_REPO:
         description: 'Device Tree Repository URL'
         required: true
